@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">IMC App</string>
+
+    <string name="calculo_imc_form_nombre">Nombre</string>
+    <string name="calculo_imc_form_peso">Peso</string>
+    <string name="calculo_imc_form_estatura">Estatura</string>
+    <string name="calculo_imc_form_calcular">Calcular</string>
+    <string name="calculo_imc_form_resultado">Cual es tu IMC...</string>
+    <string name="calculo_imc_form_imagen_usu">Imagen Usuario</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculo_imc_form_agregar">Adicionar Calculo</string>
+    <string name="historial_imc_nombre">Nombres y Apellidos</string>
+    <string name="list_item_nombre">Nombre Usuario</string>
+    <string name="list_item_resultado">ResultadoIMC</string>
+
+    <string name="opcionesImagenCamara">Cámara</string>
+    <string name="opcionesImagenGaleria">Galeria de Imagenes</string>
+
+    <string name="tituloSeleccionaImagenPerfil">Selecciona tu imagen de perfil</string>
+    <string name="calculo_historial_imc_btn_adicionar">Nuevo</string>
+    <string name="nombre_user">Juan Guillermo Gómez</string>
+    <string name="item_adicionar_imc">Adicionar IMC</string>
+    <string name="item_descripcion_imc">Descripción IMC</string>
+    <string name="item_mas_opciones">Mas Opciones</string>
+    <string name="item_acerca">Acerca de</string>
+    <string name="item_contactenos">Contactenos</string>
+    <string name="title_activity_descripcion_imc">DescripcionIMCActivity</string>
+    <string name="titulo_descripcion_imc">Que es IMC ??</string>
+    <string name="text_descripcion_imc">El índice de masa corporal (IMC) es una medida de asociación entre la masa y la talla de un individuo ideada por el estadístico belga Adolphe Quetelet, por lo que también se conoce como índice de Quetelet.  Hay que destacar que, no se pueden aplicar los mismos valores de IMC en  niños y adolescentes debido a su constante crecimiento de estatura y desarrollo corporal, por lo que se obtiene un IMC respecto a su edad y sexo.</string>
+
+</resources>

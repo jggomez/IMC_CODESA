@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/itemAdicionarIMC"
+            android:icon="@drawable/ic_calcular_imc"
+            android:title="@string/item_adicionar_imc"/>
+        <item android:id="@+id/itemDescripcionIMC"
+            android:icon="@drawable/ic_descripcion_imc"
+            android:title="@string/item_descripcion_imc"/>
+    </group>
+
+    <item android:title="@string/item_mas_opciones">
+        <menu>
+            <item android:id="@+id/itemAcerca"
+                android:icon="@drawable/ic_about_imc"
+                android:title="@string/item_acerca"/>
+            <item android:id="@+id/itemContactenos"
+                android:icon="@drawable/ic_contactenos_imc"
+                android:title="@string/item_contactenos"/>
+        </menu>
+    </item>
+
+</menu>
