@@ -1,2 +1,2 @@
 # IMC_CODESA
-Aplicación de referencia para el curso de android para CODESA
+Aplicación de referencia del curso de android para CODESA
