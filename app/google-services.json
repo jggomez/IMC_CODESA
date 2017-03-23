@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "672512046637",
+    "firebase_url": "https://codesa-7ef8d.firebaseio.com",
+    "project_id": "codesa-7ef8d",
+    "storage_bucket": "codesa-7ef8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672512046637:android:b8e65072a4640b50",
+        "android_client_info": {
+          "package_name": "co.devhack.ejercicioimc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672512046637-vm1cjiquk08n77vaaebuqqkj5h7vvesp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.devhack.ejercicioimc",
+            "certificate_hash": "a4d45109359fb93901b38c95bc98a70cf17feffc"
+          }
+        },
+        {
+          "client_id": "672512046637-sh740sdbbuld0n9evulp7pt5707h89o4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWdMo6DSBV4eBcLf9yVl3NtTkC0QfrXQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672512046637-sh740sdbbuld0n9evulp7pt5707h89o4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

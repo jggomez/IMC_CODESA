@@ -29,5 +29,17 @@
     <string name="title_activity_descripcion_imc">DescripcionIMCActivity</string>
     <string name="titulo_descripcion_imc">Que es IMC ??</string>
     <string name="text_descripcion_imc">El índice de masa corporal (IMC) es una medida de asociación entre la masa y la talla de un individuo ideada por el estadístico belga Adolphe Quetelet, por lo que también se conoce como índice de Quetelet.  Hay que destacar que, no se pueden aplicar los mismos valores de IMC en  niños y adolescentes debido a su constante crecimiento de estatura y desarrollo corporal, por lo que se obtiene un IMC respecto a su edad y sexo.</string>
+    <string name="username">E-mail</string>
+    <string name="password">Password</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="nombres">Nombres y Apellidos</string>
+
+    <string name="titulo_cargando">Cargando...</string>
+    <string name="procesando">Estamos procesando su solicitud</string>
+
+    <string name="titulo_error">Error</string>
+
+
 
 </resources>

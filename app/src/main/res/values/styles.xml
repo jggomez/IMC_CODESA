@@ -26,6 +26,33 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="DialogInfo" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/primary_text</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/dialog_info</item>
+    </style>
+
+    <style name="DialogError" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/blanco</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/dialog_error</item>
+    </style>
+
+    <style name="FloatingLabel" parent="AppTheme">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/blanco</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/blanco</item>
+        <item name="colorControlActivated">@color/blanco</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

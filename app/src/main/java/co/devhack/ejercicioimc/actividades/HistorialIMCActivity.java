@@ -1,6 +1,5 @@
 package co.devhack.ejercicioimc.actividades;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -9,18 +8,13 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.dgreenhalgh.android.simpleitemdecoration.linear.DividerItemDecoration;
-import com.dgreenhalgh.android.simpleitemdecoration.linear.EndOffsetItemDecoration;
-import com.dgreenhalgh.android.simpleitemdecoration.linear.StartOffsetItemDecoration;
 
 import java.util.ArrayList;
 
@@ -31,6 +25,7 @@ import co.devhack.ejercicioimc.R;
 import co.devhack.ejercicioimc.adaptadores.HistorialIMCAdapdator;
 import co.devhack.ejercicioimc.logica.LCalculoIMC;
 import co.devhack.ejercicioimc.modelos.HistorialIMC;
+import co.devhack.ejercicioimc.utilidades.Utilidades;
 
 public class HistorialIMCActivity extends AppCompatActivity {
 
@@ -77,7 +72,7 @@ public class HistorialIMCActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case android.R.id.home:
                 drawerHistorial.openDrawer(GravityCompat.START);
         }
@@ -87,7 +82,7 @@ public class HistorialIMCActivity extends AppCompatActivity {
 
     private boolean nvItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.itemAdicionarIMC:
                 initCalcularActivity();
                 break;
@@ -96,10 +91,10 @@ public class HistorialIMCActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.itemAcerca:
-                dialogo("Acerca de", "Desarrollado por Juan G Gomez - Devhack");
+                Utilidades.dialogoError("Acerca de", "Desarrollado por Juan G Gomez - Devhack", this);
                 break;
             case R.id.itemContactenos:
-                dialogo("Contactenos", "Contactenos a hola@devhack.co o 3174455555");
+                Utilidades.dialogoError("Contactenos", "Contactenos a hola@devhack.co o 3174498336", this);
                 break;
         }
 
@@ -108,19 +103,6 @@ public class HistorialIMCActivity extends AppCompatActivity {
         return true;
     }
 
-    private void dialogo(String titulo, String mensaje){
-        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-
-        dialog.setTitle(titulo);
-        dialog.setPositiveButton(mensaje, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.dismiss();
-            }
-        });
-
-        dialog.show();
-    }
 
     @Override
     protected void onPostResume() {
