@@ -18,9 +18,6 @@ public class CalculoActivity extends AppCompatActivity
     @BindView(R.id.toolbarPpal)
     Toolbar toolbarPpal;
 
-    public static String HISTORIAL_IMC_NOMBRE = "historialIMCNombre";
-    public static String HISTORIAL_IMC_RESULTADO = "historialIMCResultado";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +34,7 @@ public class CalculoActivity extends AppCompatActivity
 
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.titulo_calcular_imc));
     }
 
     @Override

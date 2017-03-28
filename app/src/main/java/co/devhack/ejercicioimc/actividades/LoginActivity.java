@@ -12,7 +12,8 @@ import co.devhack.ejercicioimc.R;
 import co.devhack.ejercicioimc.actividades.presenters.ILoginPresenter;
 import co.devhack.ejercicioimc.actividades.presenters.LoginPresenter;
 import co.devhack.ejercicioimc.actividades.view.ILoginView;
-import co.devhack.ejercicioimc.modelos.HistorialIMC;
+import co.devhack.ejercicioimc.utilidades.Cache;
+import co.devhack.ejercicioimc.utilidades.Constantes;
 import co.devhack.ejercicioimc.utilidades.Utilidades;
 
 public class LoginActivity extends AppCompatActivity implements ILoginView {
@@ -33,7 +34,8 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
 
         ButterKnife.bind(this);
 
-        loginPresenter = new LoginPresenter(this);
+        loginPresenter = new LoginPresenter(this, this);
+        loginPresenter.isLogging();
     }
 
     @OnClick(R.id.btnLoginRegistrarse)
@@ -68,5 +70,12 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
     @Override
     public void mostrarError(Exception e) {
         Utilidades.dialogoError(getString(R.string.titulo_error), e.getMessage(), this);
+    }
+
+    @Override
+    public void saveAuth(String token, String nombre, String uid) {
+        Cache.add(Constantes.TOKEN_KEY, token, this);
+        Cache.add(Constantes.NOMBRE_KEY, nombre, this);
+        Cache.add(Constantes.UID_USER_KEY, uid, this);
     }
 }

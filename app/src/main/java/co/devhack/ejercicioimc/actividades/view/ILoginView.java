@@ -14,4 +14,6 @@ public interface ILoginView {
 
     void mostrarError(Exception e);
 
+    void saveAuth(String token, String nombre, String uid);
+
 }

@@ -9,14 +9,27 @@ import android.content.SharedPreferences;
 
 public class Cache {
 
+    private static SharedPreferences sharedPreferences = null;
+
+    private static void initCache(Context context) {
+        if (sharedPreferences == null) {
+            sharedPreferences = context.getSharedPreferences("cache", Context.MODE_PRIVATE);
+        }
+    }
+
     public static void add(String llave, String valor, Context context) {
-        SharedPreferences sharedPreferences = context.getSharedPreferences("cache", Context.MODE_PRIVATE);
+        initCache(context);
         sharedPreferences.edit().putString(llave, valor).apply();
     }
 
     public static String get(String llave, Context context) {
-        SharedPreferences sharedPreferences = context.getSharedPreferences("cache", Context.MODE_PRIVATE);
+        initCache(context);
         return sharedPreferences.getString(llave, "");
+    }
+
+    public static void removeAll(Context context) {
+        initCache(context);
+        sharedPreferences.edit().clear().commit();
     }
 
 

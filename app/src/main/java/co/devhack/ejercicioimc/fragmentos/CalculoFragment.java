@@ -23,7 +23,6 @@ import butterknife.OnClick;
 import co.devhack.ejercicioimc.R;
 import co.devhack.ejercicioimc.logica.LCalculoIMC;
 import co.devhack.ejercicioimc.modelos.HistorialIMC;
-import co.devhack.ejercicioimc.utilidades.Cache;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -110,7 +109,7 @@ public class CalculoFragment extends Fragment {
 
         imc = LCalculoIMC.calcular(peso, estatura);
 
-        lblResultadoIMC.setText("Su IMC es de : " + Math.round(imc));
+        lblResultadoIMC.setText("Su IMC es de : " + imc);
 
         mListener.totalCalculo(imc);
     }
@@ -168,15 +167,12 @@ public class CalculoFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == SELECT_PICTURE && resultCode == RESULT_OK) {
+        if ((requestCode == SELECT_PICTURE || requestCode == REQUEST_IMAGE_CAPTURE)
+                && resultCode == RESULT_OK) {
             urlImagenPerfil = data.getData();
             Picasso.with(getActivity()).load(urlImagenPerfil).into(CalculoFragmentBtnAddImage);
         }
 
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-            urlImagenPerfil = data.getData();
-            Picasso.with(getActivity()).load(urlImagenPerfil).into(CalculoFragmentBtnAddImage);
-        }
     }
 
     @Override

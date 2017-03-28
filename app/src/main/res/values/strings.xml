@@ -40,6 +40,10 @@
 
     <string name="titulo_error">Error</string>
 
+    <string name="titulo_lista_imc">Lista de IMCs</string>
+    <string name="titulo_calcular_imc">Calculo del IMC</string>
+    <string name="titulo_tb_descripcion_imc">Descripción el IMC</string>
+    <string name="item_salir">Salir</string>
 
 
 </resources>

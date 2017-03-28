@@ -26,6 +26,8 @@ public class DescripcionIMCActivity extends AppCompatActivity {
 
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        getSupportActionBar().setTitle(getString(R.string.titulo_tb_descripcion_imc));
     }
 
     @Override

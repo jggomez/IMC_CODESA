@@ -21,4 +21,12 @@
         </menu>
     </item>
 
+    <item android:title="@string/item_salir">
+        <menu>
+            <item android:id="@+id/itemSalir"
+                android:icon="@drawable/ic_exit_to_app"
+                android:title="@string/item_salir"/>
+        </menu>
+    </item>
+
 </menu>

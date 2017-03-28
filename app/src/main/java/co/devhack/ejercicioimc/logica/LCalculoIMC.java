@@ -19,7 +19,7 @@ public class LCalculoIMC {
     }
 
     public static double calcular(double peso, double estatura) {
-        return peso / Math.pow(estatura, 2);
+        return (Math.round((peso / Math.pow(estatura, 2)) * 100.0) / 100.0);
     }
 
     public static List<HistorialIMC> getLstHistorialIMC() {
